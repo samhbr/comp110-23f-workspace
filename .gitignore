@@ -1,4 +1,4 @@
-# The entries of this file are _not_ tracked by git version control. 
+git# The entries of this file are _not_ tracked by git version control. 
 # Generally, you should not need to edit this file. The reason whey we do
 # not track and backup files such as these is because they are either
 # specific to your computer (and not helpful if you tried to use another computer)
