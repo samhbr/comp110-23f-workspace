@@ -2,42 +2,43 @@
 
 __author__ = "730563340"
 
-# Prompt the user for a 5-character word 
-user_word= input("Enter a 5-character word: ")
-
-# Check that the word input has exactly 5 characters
-if len(user_word) != 5:
+users_word = input("Enter a 5-character word:")
+if len(users_word) != 5:
     print("Error: Word must contain 5 characters")
-    exit()  # Exit the program
-
-# Prompt the user for a single character
-user_character = input("Enter a single character: ")
-
-# Check that the character input has exactly 1 character
-if len(user_character) != 1:
+    exit()  
+character = input("Enter a single character")
+if len(character) != 1:
     print("Error: Character must be a single character.")
-    exit()  # Exit the program
+    exit()  
 
-# Print the diagnostic message
-print(f"Searching for {user_character} in {user_word}")
+print("Searching for"+ character + "in" + users_word )
 
-# Check each index of the word string
-for index, letter in enumerate(user_word):
-    if letter == user_character:
-        print(f"{user_character} found at index {index}")
+if (character == users_word[0]):
+    print(character + "found at index 0")
+if (character == users_word[1]):
+    print(character + "found at index 1")
+if (character == users_word[2]):
+    print(character + "found at index 2")
+if (character == users_word[3]):
+    print(character + "found at index 3")
+if (character == users_word[4]):
+    print(character + "found at index 4")
 
-# Count the number of matching characters
-match_count = 0
+word_count: int = 0 
+if character == users_word[0]:
+    word_count = word_count + 1
+if character == users_word[1]:
+    word_count = word_count + 1
+if character == users_word[2]:
+    word_count = word_count + 1
+if character == users_word[3]:
+    word_count = word_count + 1
+if character == users_word[4]:
+    word_count = word_count + 1
 
-# Check each index of the word string
-for index, letter in enumerate(user_word):
-    if letter == user_character:
-        match_count += 1
-
-        # Print the appropriate message based on the count
-if match_count == 0:
-    print(f"No instances of {user_character} found in {user_word}")
-elif match_count == 1:
-    print(f"1 instance of {user_character} found in {user_word}")
-else:
-    print(f"{match_count} instances of {user_character} found in {user_word}")
+if word_count == 0:
+    print("No instances of {character} found in {users_word}")
+if word_count == 1:
+    print("1 instance of {character} found in {users_word}") 
+if word_count > 1:
+    print(str(word_count)) + "instances of" + {character} + "found in" + {users_word}
