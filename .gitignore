@@ -20,3 +20,4 @@ git# The entries of this file are _not_ tracked by git version control.
 
 # Misc
 **/.DS_Store
+exercises/ex00_hello_world.py
