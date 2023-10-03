@@ -1,4 +1,4 @@
-"""EX03 – A structured worldle similar to the NYT game!"""
+"""EX03 – A structured worldle similar to the NYT game!"""
 
 __author__ = "730563340"
 
@@ -38,7 +38,7 @@ def emojified(guess_string: str, secret_string: str) -> str:
     return emoji_result
 
 def input_guess(len_of_wordle: int) -> str: 
-    """Lets the user know if the chosen word is the length of the secret word"""
+    """Lets the user know if the chosen word is the length of the secret word."""
     users_guess = input(f"Enter a {len_of_wordle} character word: ")
     while len(users_guess) != len_of_wordle: 
         users_guess = input(f"That wasn't {len_of_wordle} chars! Try again: ")
@@ -55,7 +55,7 @@ def main() -> None:
         print(emojified(guess_of_wordle, secret_word))
         if guess_of_wordle == secret_word: 
             win = True
-            print(f"You won in {turns - 1}/6 turns!")
+            print(f"You won in {turns}/6 turns!")
         turns += 1
     if win is False: 
         print("X/6 - Sorry, try again tomorrow!")
