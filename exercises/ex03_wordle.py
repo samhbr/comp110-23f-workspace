@@ -1,4 +1,4 @@
-"""EX03 Structured Worldle"""
+"""EX03 – A structured worldle similar to the NYT game!"""
 
 __author__ = "730563340"
 
@@ -7,19 +7,19 @@ def contains_char(secret_string: str, guess_string: str) -> bool:
     assert len(guess_string) == 1
     char_present = False
     index = 0
-    # Checks if the letter in the guess is at each position in the secret word
+    # Checks if the letter in the guess is at each position in the secret word.
     while index < len(secret_string):
         if guess_string == secret_string[index]:
             char_present = True
         index = index + 1
-    # Returns the outcome of searching for the character to the function
+    # Returns the outcome of searching for the character to the function.
     if char_present is False: 
         return False 
     else: 
         return True
 
 def emojified(guess_string: str, secret_string: str) -> str: 
-    """Create a code for the emoji results of a guess versus the secret word"""
+    """Create a code for the emoji results of a guess versus the secret word."""
     WHITE_BOX = "\U00002B1C"
     GREEN_BOX = "\U0001F7E9"
     YELLOW_BOX = "\U0001F7E8"
@@ -49,7 +49,7 @@ def main() -> None:
     secret_word = "codes"
     turns = 1
     win = False
-    while turns < 7 and not win: 
+    while turns < 7 and win is False: 
         print(f"=== Turn {turns}/6 ===")
         guess_of_wordle = input_guess(len(secret_word))
         print(emojified(guess_of_wordle, secret_word))
@@ -57,7 +57,7 @@ def main() -> None:
             win = True
             print(f"You won in {turns - 1}/6 turns!")
         turns += 1
-    if not win: 
+    if win is False: 
         print("X/6 - Sorry, try again tomorrow!")
 
 if __name__ == "__main":
