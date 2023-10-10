@@ -3,7 +3,7 @@
 __author__ = "730563340"
 
 
-def all(num_list, given_int) -> bool:
+def all(num_list: list[int], given_int: int) -> bool:
     """Check if all elements in num_list are equal to given_int."""
     num_idx: int = 0  # Initialize the index
 
@@ -35,7 +35,7 @@ def max(input: list[int]) -> int:
     return max_num
 
 
-def is_equal(list1, list2) -> bool:
+def is_equal(list1: list[int], list2: list[int]) -> bool:
     """Check if two lists of integers are equal at each index."""
     if len(list1) != len(list2):
         return False
