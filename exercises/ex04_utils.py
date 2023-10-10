@@ -1,8 +1,6 @@
-""" EX04 - Exercise using 'List' Utility Functions"""
+"""EX04 - Exercise using 'List' Utility Functions!"""
 
 __author__ = "730563340"
-
-from random import randint
 
 def all(num_list: list[int], given_int: int) -> bool:
     if len(num_list) == 0:
