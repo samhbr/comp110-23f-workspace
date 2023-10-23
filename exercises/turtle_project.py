@@ -54,6 +54,7 @@ def draw_beach(turtle: Turtle) -> None:
         i += 1
     turtle.end_fill()
 
+
 def draw_water(turtle: Turtle) -> None:
     """Draws the water."""
     turtle.penup()
