@@ -20,7 +20,7 @@ def main() -> None:
     done()
 
 def draw_sky(turtle: Turtle, x: float, y: float, width: float) -> None:
-    """Draw a sky of the given width whose top-left corner is located at x, y."""
+    """Draws a sky of the given width."""
     turtle.penup()
     turtle.goto(x, y)
     turtle.pendown()
@@ -36,7 +36,7 @@ def draw_sky(turtle: Turtle, x: float, y: float, width: float) -> None:
     turtle.end_fill()
 
 def draw_beach(turtle: Turtle) -> None:
-    """Draw the beach to fill the entire screen."""
+    """Draws the beach to fill the entire screen."""
     turtle.penup()
     turtle.goto(-400, -200)  # Coordinates to fill the screen
     turtle.pendown()
@@ -52,7 +52,7 @@ def draw_beach(turtle: Turtle) -> None:
     turtle.end_fill()
 
 def draw_water(turtle: Turtle) -> None:
-    """Draw the water."""
+    """Draws the water."""
     turtle.penup()
     turtle.goto(-400, -100)
     turtle.pendown()
@@ -92,7 +92,7 @@ def draw_wings(turtle: Turtle) -> None:
     
 
 def draw_sun(turtle: Turtle) -> None:
-    """Draw a simple sun in the corner."""
+    """Draw a simple sun."""
     turtle.penup()
     turtle.goto(200, -75)
     turtle.pendown()
