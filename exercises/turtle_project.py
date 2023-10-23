@@ -2,10 +2,11 @@
 
 __author__ = "730563340"
 
-from turtle import Turtle, colormode, done, Screen
+from turtle import Turtle, colormode, done
 
 # Set the color mode for RGB values 0-255
 colormode(255)
+
 
 def main() -> None:
     """The entrypoint of my scene."""
@@ -18,6 +19,7 @@ def main() -> None:
     draw_birds(turtle, -200, 0)
     draw_sun(turtle)
     done()
+
 
 def draw_sky(turtle: Turtle, x: float, y: float, width: float) -> None:
     """Draws a sky of the given width."""
@@ -34,6 +36,7 @@ def draw_sky(turtle: Turtle, x: float, y: float, width: float) -> None:
         turtle.right(90)
         i += 1
     turtle.end_fill()
+
 
 def draw_beach(turtle: Turtle) -> None:
     """Draws the beach to fill the entire screen."""
@@ -67,6 +70,7 @@ def draw_water(turtle: Turtle) -> None:
         i += 1
     turtle.end_fill()
 
+
 def draw_birds(turtle: Turtle, x: float, y: float) -> None:
     """Draws two birds flying above the water."""
     turtle.left(90)
@@ -83,7 +87,7 @@ def draw_birds(turtle: Turtle, x: float, y: float) -> None:
   
 
 def draw_wings(turtle: Turtle) -> None:
-    "Draws a wing of a bird."
+    """Draws a wing of a bird."""
     turtle.color("gray")
     turtle.circle(20, 180)
     # Turns turtle around for second wing
