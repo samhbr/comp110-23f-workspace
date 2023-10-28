@@ -1,4 +1,4 @@
-"""Practice importing from other modules"""
+"""Practice importing from other modules."""
 
 from lessons import my_functions
 

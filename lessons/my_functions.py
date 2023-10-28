@@ -1,7 +1,10 @@
-"""Things I'll be Importing"""
+"""Things I'll be Importing."""
 
+
+"""Addition!"""
 def addition(x: int, y: int): 
     return x + y 
+
 
 my_variable: str = "Hello!"
 

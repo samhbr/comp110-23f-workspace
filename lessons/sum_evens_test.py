@@ -16,11 +16,11 @@ def test_list_length_1():
 
 def test_list_positives(): 
     """Testing sum on a list of positive integers."""
-    test_list: list[int] = [1,2,3,4]
+    test_list: list[int] = [1, 2, 3, 4]
     assert sums_evens_in_list(test_list) == 6
 
 
 def test_lists_negs_and_pos():
     """Testing sum of negatives and positives."""
-    test_list: list[int] = [1,-2,3,4]
+    test_list: list[int] = [1, -2, 3, 4]
     assert sums_evens_in_list(test_list)

@@ -1,8 +1,8 @@
-"""Game that only completes when you guess the right Number"""
+"""Game that only completes when you guess the right Number."""
 
 from random import randint 
 
-secret: int = randint (1,10)
+secret: int = randint (1, 10)
 print(secret)
 
 guess: int = input("Guess a number between 1 and 10!")

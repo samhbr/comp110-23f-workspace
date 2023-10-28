@@ -1,3 +1,5 @@
+"""Lists!"""
+
 # This is a Python script to practice working with lists
 
 # Initialize an empty grocery list

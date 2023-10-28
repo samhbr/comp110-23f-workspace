@@ -2,7 +2,7 @@
 
 
 def sums_evens_in_list(input_list: list[int]) -> int: 
-    """Sum all even numbers in this list"""
+    """Sum all even numbers in this list."""
     list_sum: int = 0
     for elem in input_list: 
         if elem % 2 == 0: 
