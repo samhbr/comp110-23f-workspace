@@ -1,7 +1,7 @@
 """Test my zip function."""
 __author__ = "730563340"
 
-from lessons.zip import zip.py
+from lessons.zip import zip
 
 
 def test_empty_dict(): 
