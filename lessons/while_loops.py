@@ -1,6 +1,6 @@
 """Demonstrates while loops by finding low value in string"""
 
-cards: str: "5235"
+cards: str = "5235"
 
 card_idx: int = 0 
 # look at each number in the string 

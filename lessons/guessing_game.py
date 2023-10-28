@@ -11,7 +11,7 @@ while guess != secret:
     print("Wrong!")
     if (guess < 1) or (guess > 10):
         print("That was not between 1 and 10!")
-    if guess > secret 
+    if guess > secret:
         print("Your guess was too high!")
     else:
         print("Your guess was too low!")

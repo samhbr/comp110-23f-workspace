@@ -1,4 +1,5 @@
-"""Practice summing over lists"""
+"""Practice summing over lists."""
+
 
 def sums_evens_in_list(input_list: list[int]) -> int: 
     """Sum all even numbers in this list"""

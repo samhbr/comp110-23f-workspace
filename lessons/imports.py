@@ -2,5 +2,5 @@
 
 from lessons import my_functions
 
-if __name__ == "__main__"
+if __name__ == "__main__":
     print("Howdy!")
