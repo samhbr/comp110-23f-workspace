@@ -1,17 +1,16 @@
-"""Combining two lists into a dictionary"""
+"""Combining two lists into a dictionary."""
 
 __author__ = "730563340"
 
-def zip_function(str_list: list[int], int_list: list[int]) -> dict[str, int]:
-    # Check if the input lists are of different lengths or empty
-    if len(str_list) != len(int_list):
+
+def zip(key_list: list[str], value_list: list[int]) -> dict[str, int]:
+    """Creates a dictionary where the keys are the items of the first list and the values are the corresponding items at the same index of the second list."""
+    #Check if the input lists are of different lengths or empty
+    if (len(key_list) != len(value_list)) or (len(key_list) == 0):
         return {}
-    
-    # Check if the input lists are empty
-    if len(str_list) == 0:
-        return {}
-    
-    # Create a dictionary with the keys from the first list and values from the second list
-    result_dict = {str_list[i]: int_list[i] for i in range(len(str_list))}
-    
-    return result_dict
+    zip: dict[str, int] = {}
+    i: int = 0
+    while i < len(key_list):
+        zip[key_list[i]] = value_list[i]
+        i += 1 
+        return zip
